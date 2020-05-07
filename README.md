@@ -29,13 +29,13 @@ python datagen.py
 ```
 Step 3: Run the train.py file
 
-This script will carry out the training process.
+This script will carry out the training process. The weights of the trained model would then be saved.
 ```bash
 python train.py
 ```
 Step 3: Run the FaceRecognition.py file
 
-This script will carry out the recognition process.
+This script will carry out the recognition process by loading the trained model.
 ```bash
 python FaceRecognition.py
 ```
