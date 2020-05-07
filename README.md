@@ -1,6 +1,7 @@
 # Face Recognition using Deep Learning with OpenCV and Keras
 
 This project is built-in Python and it deals with Face Recognition.
+The Deep Learning model is built using the Keras framework and has built using the principle of Transfer Learning. The Transfer Learning model used is the VGG16 model. The model is trainable and customizable.
 
 ## Installation
 
@@ -8,7 +9,7 @@ Following are the necessary packages for this project
 
 ```bash
 conda install -c menpo opencv3
-condo install keras
+conda install keras
 pip install Pillow
 ```
 
