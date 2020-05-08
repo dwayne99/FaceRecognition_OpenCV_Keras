@@ -14,8 +14,8 @@ dest_test = 'data/test'
 
 for name in os.listdir(images_path):
     if name not in os.listdir(dest_train) and name not in os.listdir(dest_test):
-        os.makedirs('data/train/' + name)
-        os.makedirs('data/test/' + name)
+        os.makedirs('data/train/' + name.upper())
+        os.makedirs('data/test/' + name.upper())
 
     name_path = os.path.join(images_path,name)
     num_files = len(os.listdir(name_path))

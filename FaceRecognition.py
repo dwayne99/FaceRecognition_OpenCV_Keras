@@ -11,15 +11,26 @@ import cv2
 from keras.models import load_model
 import numpy as np
 from keras.preprocessing import image
+import os
+
+# For naming the classes
+l_ = []
+for f in os.listdir('data/train/'):
+    l_.append(f.upper())
+
+l_ = sorted(l_)
+people = {}
+for i,person in enumerate(l_):
+    people[i] = person.title()
 
 
-people = {
-    0:'Abigail',
-    1: 'Dwayne',
-    2: 'Papa',
-    3: 'Ronnie',
-    4: 'Veronica'
-}
+# people = {
+#     0:'Abigail',
+#     1: 'Dwayne',
+#     2: 'Papa',
+#     3: 'Ronnie',
+#     4: 'Veronica'
+# }
 
 
 # Loading the trained model 

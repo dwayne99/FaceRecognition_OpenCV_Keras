@@ -41,7 +41,7 @@ def face_extractor(img):
     return cropped_face
 
 # Initialize the webcam
-name = input('Enter your name:')
+name = input('Enter your name:').upper()
 name_path = 'images/' + name
 
 if not os.path.isdir(name_path):

@@ -9,7 +9,6 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
 import numpy as np
 from glob import glob
-import matplotlib.pyplot as plt
 
 # resize all images
 image_size = [224,224]
@@ -84,14 +83,14 @@ history = model.fit_generator(
 
 # Viewing the loss and accuracy
 
-plt.plot(history.history['loss'], label = 'train loss')
-plt.plot(history.history['val_loss'], label = 'val loss')
-plt.legend()
-plt.show()
+# plt.plot(history.history['loss'], label = 'train loss')
+# plt.plot(history.history['val_loss'], label = 'val loss')
+# plt.legend()
+# plt.show()
 
-plt.plot(history.history['accuracy'], label = 'train accuracy')
-plt.plot(history.history['val_accuracy'], label = 'val accuracy')
-plt.legend()
-plt.show()
+# plt.plot(history.history['accuracy'], label = 'train accuracy')
+# plt.plot(history.history['val_accuracy'], label = 'val accuracy')
+# plt.legend()
+# plt.show()
 
 model.save('vgg_model1.h5')
